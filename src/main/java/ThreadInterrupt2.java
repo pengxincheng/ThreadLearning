@@ -29,7 +29,7 @@ public class ThreadInterrupt2 {
                 try {
                     Thread.sleep(3000L);
                 } catch (InterruptedException e) {
-                  //  Thread.currentThread().interrupt();
+                    Thread.currentThread().interrupt();
                     //设置中断状态，抛出异常后会清除中断标记位
                     e.printStackTrace();
                 }
